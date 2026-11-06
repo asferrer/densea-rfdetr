@@ -1,0 +1,17 @@
+DenSea RF-DETR
+Copyright 2026 Alejandro Sanchez Ferrer
+
+This repository is a derivative work of RF-DETR (https://github.com/roboflow/rf-detr),
+Copyright (c) 2025 Roboflow, Inc., licensed under the Apache License, Version 2.0.
+The starting point is upstream commit 750f1e7cf543d07e533f1c85def2d46e7a9f5b75
+(version 1.5.0.rc2, 2026-02-22). Files modified from upstream are listed in CHANGES.md.
+
+The upstream code in turn includes code from the following projects, whose copyright
+notices are kept in the headers of the corresponding files:
+  - LW-DETR, Copyright (c) 2024 Baidu
+  - Conditional DETR, Copyright (c) 2021 Microsoft
+  - Deformable DETR, Copyright (c) 2020 SenseTime
+  - DETR, Copyright (c) Facebook, Inc. and its affiliates
+  - pycocotools, Copyright (c) 2014, Piotr Dollar and Tsung-Yi Lin
+  - DINOv2 modelling code adapted from Hugging Face Transformers, Copyright 2024 Meta Inc.
+    and the HuggingFace Inc. team

@@ -1,0 +1,19 @@
+# Versions used for the DenSea-Aggregated results (Python 3.11; torch 2.7.0 / CUDA 12.8 come with the base image).
+albumentations==1.4.24
+faster-coco-eval==1.8.0
+matplotlib==3.10.8
+numpy==2.2.5
+peft==0.18.1
+pillow==12.1.1
+pycocotools==2.0.11
+pydantic==2.12.5
+requests==2.32.3
+rf100vl==1.1.0
+roboflow==1.2.15
+scipy==1.17.1
+supervision==0.27.0.post1
+tensorboard==2.20.0
+tqdm==4.67.1
+transformers==4.57.6
+# tests
+pytest>=7.2.2,<9

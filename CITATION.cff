@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below, the dataset and the upstream RF-DETR paper."
+title: "DenSea RF-DETR: training and evaluation of RF-DETR on DenSea-Aggregated"
+type: software
+authors:
+  - family-names: "Sánchez Ferrer"
+    given-names: "Alejandro"
+license: Apache-2.0
+repository-code: "https://github.com/asferrer/densea-rfdetr"
+keywords:
+  - object detection
+  - marine debris
+  - synthetic data
+  - RF-DETR
+preferred-citation:
+  type: article
+  title: "When Does Synthetic Data Help Underwater Debris Detection? Gap Metrics, Data Regimes and Detector Paradigms"
+  authors:
+    - family-names: "Sánchez-Ferrer"
+      given-names: "Alejandro"
+    - family-names: "Gallego"
+      given-names: "Antonio Javier"
+    - family-names: "Calvo-Zaragoza"
+      given-names: "Jorge"
+  journal: "Neurocomputing"
+  year: 2026
+  notes: "Manuscript in preparation"
+references:
+  - type: dataset
+    title: "DenSea-Aggregated: A Group-Aware Benchmark for Underwater Debris Detection"
+    authors:
+      - family-names: "Sánchez-Ferrer"
+        given-names: "Alejandro"
+      - family-names: "Gallego"
+        given-names: "Antonio Javier"
+      - family-names: "Calvo-Zaragoza"
+        given-names: "Jorge"
+    year: 2026
+    publisher:
+      name: "University of Alicante"
+    url: "https://www.dlsi.ua.es/~jgallego/datasets/"
+  - type: generic
+    title: "RF-DETR: Neural Architecture Search for Real-Time Detection Transformers"
+    authors:
+      - family-names: "Robinson"
+        given-names: "Isaac"
+      - family-names: "Robicheaux"
+        given-names: "Peter"
+      - family-names: "Popov"
+        given-names: "Matvei"
+      - family-names: "Ramanan"
+        given-names: "Deva"
+      - family-names: "Peri"
+        given-names: "Neehar"
+    year: 2025
+    url: "https://arxiv.org/abs/2511.09554"
