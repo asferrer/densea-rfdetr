@@ -30,6 +30,20 @@ exactly what was changed. The details are in [`CHANGES.md`](CHANGES.md); in shor
 - Removed: the documentation site, CI workflows, the GPU benchmark tests and the files of upstream that are
   specific to its own tooling.
 
+## Workflow
+
+The experiments are defined and evaluated in `densea-benchmark`; this repository trains one detector and writes its detections:
+
+```mermaid
+flowchart LR
+    BM["densea-benchmark<br/>training set of the experiment<br/>(COCO files)"] --> PD["densea/prepare_dataset.py<br/>RF-DETR layout, images not copied"]
+    PD --> TR["densea/train.py<br/>hyperparams.py, AdamW, EMA,<br/>early stopping, selection on VAL"]
+    TR --> BEST["checkpoint_best_ema.pth"]
+    BEST --> DUMP["densea/dump_test_predictions.py<br/>TEST, once"]
+    DUMP --> PRED["eval_test/coco_predictions.json<br/>eval_summary.json"]
+    PRED --> BOOT["densea-benchmark<br/>group bootstrap"]
+```
+
 ## Installation
 
 With Docker (NVIDIA Container Toolkit and a GPU with 24 GB or more; the study used an RTX 5090):
